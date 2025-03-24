@@ -1,31 +1,18 @@
-# Ignore WordPress core files
-wp-admin/
-wp-includes/
-
-# Ignore uploads, cache, and environment files
-wp-content/uploads/
-wp-content/cache/
-wp-content/backup/
-wp-content/advanced-cache.php
-wp-content/debug.log
-
-# Ignore downloaded themes but keep custom ones
-wp-content/themes/*
-!wp-content/themes/your-custom-theme/
-
-# Ignore downloaded plugins but keep custom ones
-wp-content/plugins/*
-!wp-content/plugins/your-custom-plugin/
-
-# Ignore configuration files (don't expose secrets)
-wp-config.php
-wp-config-sample.php
-
 # Ignore system and temporary files
 .DS_Store
 Thumbs.db
-node_modules/
-vendor/
 *.log
 *.tmp
-*.*
+*.swp
+*.bak
+
+# Ignore cache files
+wp-content/cache/
+wp-content/backup/
+wp-content/debug.log
+
+# Ignore environment files (if using local development tools)
+.env
+composer.lock
+
+# Allow everything else (remove all previous WordPress ignores)
